@@ -16,15 +16,15 @@ def play_game():
     counter = 1
     while True:
         number = user_input()
-        if number == computer_num :
-            print("Συγχαρητήρια τον βρήκες με %s" % counter)
-            break
-        elif number > computer_num :
+        if number > computer_num :
             print("Ο Αριθμός που δώσατε είναι μεγαλύτερος απο αυτον του υπολογιστη")
             counter += 1
         elif number < computer_num :
             counter += 1
             print("Ο Αριθμός που δώσατε είναι μικρότερος απο αυτον του υπολογιστη")
+        else:
+            print("Συγχαρητήρια τον βρήκες με %s" % counter)
+            break
 
 
 def main():
