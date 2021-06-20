@@ -6,9 +6,12 @@ def user_input() :
     while True:
         try:
             number = int(input("Δωσε έναν αριθμό μεταξύ 1 και 200 "))
-            break
+            if 1 <= number <= 200:
+                break
+            else:
+                print("Δώσατε Αριθμό εκτος ορίων. Ξαναπροσπαθηστε")
         except ValueError:
-            print("Error")
+            print("Δεν δώσατε αριθμό")
     return number
 
 
